@@ -1,6 +1,6 @@
 package principioLiskov;
 
-public class ConfiguracionSistema implements RecursoPersistente {
+public class ConfiguracionSistema implements ILoadRecursosPersistente, ISaveRecursoPersistente {
     @Override
     public void load() {
         System.out.println("Configuracion sistema cargado");
